@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="header__logo" src="" alt="Логотип Савелий Кононова">
+
+            <address class="header__contacts contactcs">
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <p class="contacts__head">ТЕЛЕФОН</p>
+                        <a href="tel: + 79601201611" class="contacts__link"> +7(960) 120 16-11 </a>
+                    </li>
+                    <li class="contacts__item">
+                        <p>EMAIL</p>
+                        <a href="mailto:savkonon@yandex.ru" class="contacts__link">savkonon@yandex.ru</a>
+                    </li>
+                    <li class="contacts__item">
+                        <p>Соц. Сети</p>
+                        <ul class="contacts__social-list">
+                            <li class="contacts__social-item">
+                                <a href="#" class=" contacts__social-link_whatsup"></a>
+                            </li>
+               
+                            <li class="contacts__social-item">
+                                <a href="#" class="contacts__social-link contacts__social-link_instagram"></a>
+                            </li>
+
+                            <li class="contacts__social-item">
+                                <a href="#" class="contacts__social-link contacts__social-link_facebook"></a>
+                            </li>
+
+                            <li class="contacts__social-item">
+                                <a href="#" class="contacts__social-link contacts__social-link_telegram"></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </address>
+
+            <button header__contacts-burger></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="present">
+            <div class="container">
+                <img src="" alt="Фотография чувака" class="present__photo">
+
+                <div class="present__content">
+                    <hgroup class="present__group-title">
+                        <h1 class="present__title">Савелий Кононов</h1>
+                        <h2 class="present__subtitle">Разработчик сайтов</h2>
+                    </hgroup>
+                    <p class="present__description">
+                        Меня зовут Савелий и я разработчик сайтов с опытом менее одного года
+                    </p>
+                    <button class="present__order-btn">Заказать</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantage">
+            <div class="container">
+                <h2 class="advantage__title"></h2>
+
+                <ul class="advantage__list">
+                    <li class="advantage__item advantage__item_stack">Стэк HTML, CSS, JavaScript</li>
+                    <li class="advantage__item advantage__item_mockup">Создаю mockup для ваших проектов</li>
+                    <li class="advantage__item advantage__item_inclusive">Инклюзивонсть</li>
+                    <li class="advantage__item advantage__item_adapt">Адаптивность и кросбраузреность</li>
+                    <li class="advantage__item advantage__item_clear">Чистый валидный код</li>
+                    <li class="advantage__item advantage__item_copyright">Копирайтинг</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">ПОРТФОЛИО</h2>
+
+                <div class="portfolio__slider">
+                    <ul class="portfolio__list">
+                        <li class="portfolio__item portfolio__item-cinema">
+                            <article class="card">
+                                <img src="img/cinema.jpg" alt="" class="card__picture">
+
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Cinema</span>
+                                    <time class="card__date" datetime="2020">2020</time>
+                                </p>
+
+                                <h3 class="card_title">
+                                    Многостраничный сайт
+                                </h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item portfolio__item-iphone">
+                            <article class="card">
+                                <img src="img/iphone.jpg" alt="" class="card__picture">
+                                <p class="card__data">
+                                    <span class="card__client">Клиент: Full Apple</span>
+                                    <time class="card__date" datetime="2021">2021</time>
+                                </p>
+
+                                <h3>
+                                    Landing-page
+                                </h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item portfolio__item-go">
+                            <article class="card">
+                                <img src="img/go.jpg" alt="" class="card__picture">
+                                <p class="card_data">
+                                    <span class="card__client">Клиент: Game Over</span>
+                                    <time class="card__date" datetime="2019">2019</time>
+                                </p>
+
+                                <h3>
+                                    Landing-page
+                                </h3>
+                            </article>
+                        </li>
+
+                        <li class="portfolio__item portfolio__item-friendlyhouse">
+                            <article class="card">
+                                <img src="img/FriendlyHouse.jpg" alt="" class="card__picture">
+                                <p class="card_data">
+                                    <span class="card__client">Клиент: Friendly House</span>
+                                    <time class="card__date" datetime="2020">2020</time>
+                                </p>
+
+                                <h3>
+                                    Landing-page
+                                </h3>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
