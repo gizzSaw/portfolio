@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
     <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/jquery-3.6.0.min.js"></script>
     <script defer src="js/index.js"></script>
 </head>
 
@@ -32,7 +33,7 @@
                             <li class="contacts__social-item">
                                 <a href="#" class="contacts__social-link  contacts__social-link_whatsup"></a>
                             </li>
-               
+
                             <li class="contacts__social-item">
                                 <a href="#" class="contacts__social-link contacts__social-link_instagram"></a>
                             </li>
@@ -170,6 +171,61 @@
             </div>
         </section>
     </main>
+
+    <div class="page__overlay page__overlay_modal">
+        <div class="modal">
+            <h2 class="modal__title"> Заполните форму и я не свяжусь с вами</h2>
+
+            <form class="modal__form callback">
+
+                <fieldset class="callback__group">
+                    <legend class="visually-hidden">Личные данные</legend>
+                    <label class="callback__label">
+                        <span class="callback__label-text">ФИО</span>
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+                    </label>
+                    <label class="callback__label">
+                        <span class="callback__label-text">ТЕЛЕФОН</span>
+                        <input class="callback__input" type="text" name="bio" placeholder="Введите ваш номер телефона">
+                    </label>
+                </fieldset>
+
+
+                <fieldset class="callback__group connetc">
+                    <legend class="connect__title">Где удобнее связаться</legend>
+
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="telegramm">
+                        <span class="connect__text">Телеграмм</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="whatsup">
+                        <span class="connect__text">Whatsup</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="call">
+                        <span class="connect__text">Позвонить</span>
+                    </label>
+                    <label class="connect__label">
+                        <input class="connect__radio" type="radio" name="connect" value="viber">
+                        <span class="connect__text">Viber</span>
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="callback__btn">Заказать</button>
+            </form>
+
+            <button class="modal__close">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="39.7747" height="2.65165" rx="1"
+                        transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 28.125)" fill="#282626" />
+                    <rect width="39.7747" height="2.65165" rx="1"
+                        transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.875 0)" fill="#282626" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
 </body>
 
 </html>
